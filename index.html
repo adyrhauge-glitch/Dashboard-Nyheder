@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Dashboard Nyheder</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 20px;
-            padding: 20px;
-            background-color: white;
-        }
-    </style>
+<meta charset="UTF-8">
+<style>
+body {
+    font-family: Arial;
+    font-size: 20px;
+    padding: 20px;
+}
+</style>
 </head>
 <body>
 
-<div id="content">
-Indlæser nyheder...
-</div>
+📢 Driftstatus:<br><br>
 
-<script>
-fetch('nyheder.txt')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('content').innerText = data;
-  });
-</script>
+- System A er opdateret<br>
+- System B har vedligehold kl 22:00<br>
+- Kundeservice åbner 08:00<br>
 
 </body>
 </html>
