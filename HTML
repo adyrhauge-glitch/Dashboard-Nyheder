@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Nyheder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            padding: 20px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">
+Indlæser nyheder...
+</div>
+
+<script>
+fetch('nyheder.txt')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('content').innerText = data;
+  });
+</script>
+
+</body>
+</html>
